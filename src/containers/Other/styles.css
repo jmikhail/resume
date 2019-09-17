@@ -1,5 +1,5 @@
 .other-container{
-    background-color: #f8f8f8;
+    background-color: #fff;
     min-height: calc(60vh - var(--header-height));
     display: flex;
     flex-direction: column;
@@ -9,8 +9,10 @@
 }
 
 .other-content {
-    font-size: 1.2em;
+    font-size: 1em;
+    line-height: 1.4em;
     font-weight: 100;
+    margin-bottom: 34px;
 }
 
 .highlight {

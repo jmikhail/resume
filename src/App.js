@@ -5,7 +5,7 @@ import Experience from './containers/Experience';
 import Skills from './containers/Skills';
 import Top from './components/Top';
 import * as Scroll from 'react-scroll';
-import { Events } from 'react-scroll'
+import { Events, Link } from 'react-scroll'
 import Other from './containers/Other';
 import Contact from './containers/Contact';
 
@@ -43,8 +43,8 @@ function App() {
       backgroundColor: "#fff",
       details: (
         <ul>
-          <li>Overseeing all the technical operations at Buzzyn Rewards, a rewards platform used by over 15,000 users in Ottawa.</li>
-          <li>Developed a <span id="highlight">ReactJS</span> web application, <a href="http://buzzyn.com/business-hub/login">buzzyn.com/business-hub</a>, for business owners to manage and track the performance of their loyalty programs</li>
+          <li>Overseeing all the technical operations at Buzzyn Rewards, a rewards platform used by over 15,000 users in Ottawa</li>
+          <li>Developed a <span id="highlight">ReactJS</span> web application, <a className="inline-link" href="http://buzzyn.com/business-hub/login">buzzyn.com/business-hub</a>, for business owners to manage and track the performance of their loyalty programs</li>
           <li>Developed and released two <span id="highlight">iOS applications (Objective-C)</span> and two <span id="highlight">Android applications (Java)</span> to the iOS AppStore and Android Play Store</li>
           <li>Developed and released two <span id="highlight">React Native</span> applications</li>
           <li>Led the development of a RESTful API service (<span id="highlight">Ruby on Rails</span>) powering the platform</li>
@@ -93,7 +93,7 @@ function App() {
       backgroundColor: "#fff",
       details: (
         <ul>
-          <li>Developed an Apache Maven plug-in to add functionality to the Archetype Plug-in (used to generate new projects from templates).</li>
+          <li>Developed an Apache Maven plug-in to add functionality to the Archetype Plug-in (used to generate new projects from templates)</li>
         </ul>
       )
     }
@@ -103,7 +103,7 @@ function App() {
     {
       name: "edu-1",
       title: "Masters of Applied Science",
-      subtitle: "Electrical and Computer Engineering",
+      subtitle: "Electrical and Computer Systems Engineering",
       companyLogo: require("./assets/images/logo_carleton.jpg"),
       companyName: "Carleton University",
       companyLocation: "Ottawa, Canada",
@@ -111,12 +111,12 @@ function App() {
       backgroundColor: "#fff",
       details: (
         <ul>
-          <li>Supervisor: Dr. Gabriel Wainer</li>
-          <li>Thesis: Discrete Event Simulation of Long Term Evolution-Advanced (LTE-A) Networks</li>
+          <li>Supervisor: <a className="inline-link" href="https://carleton.ca/sce/people/wainer/">Dr. Gabriel Wainer</a></li>
+          <li>Thesis: Discrete Event Simulation of Long Term Evolution-Advanced (LTE-A) Networks<a class="highlighted-link" href="https://curve.carleton.ca/system/files/etd/96b20de4-f516-4bbe-87a3-80d0b9c9187f/etd_pdf/2ac3b371d3ce8cbb7f399330a77c83ea/mikhail-discreteeventsimulationoflongtermevolution.pdf">read</a></li>
           <li>Proposed two algorithms to enhance the upload speed/performance of large files at the cell edges in LTE-A networks</li>
-          <li>Modelled Coordinated MultiPoint (CoMP) techniques used in LTE-advanced (4G) cellular networks. The simulations were based on the Discrete EVent System specification (DEVS) formalism and developed with the CD++ simulation toolkit in C++.</li>
+          <li>Modelled Coordinated MultiPoint (CoMP) techniques used in LTE-advanced (4G) cellular networks. The simulations were based on the Discrete EVent System specification (DEVS) formalism and developed with the CD++ simulation toolkit in <span className="highlight">C++</span></li>
           <li>Collaborated with Ericsson Canada on building a simplified simulation model of LTE’s EUTRAN protocol stack to test the efficiency of the proposed algorithms</li>
-          <li>Awarded two patents for the proposed algorithms</li>
+          <li>Awarded two patents for the proposed algorithms<Link className="highlighted-link" smooth={true} to='patents'>more</Link></li>
         </ul>
       )
     },

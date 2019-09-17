@@ -9,10 +9,14 @@ import {
     faGithub,
     faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+    faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
     faGithub,
     faLinkedinIn,
+    faEnvelope
 );
 
 function Top(props) {
@@ -28,6 +32,9 @@ function Top(props) {
                 </a>
                 <a className="top-link" href="http://linkedin.com/in/jan-mikhail">
                     <FontAwesomeIcon className="top-link-img" icon={['fab', 'linkedin-in']} size="2x" />
+                </a>
+                <a className="top-link" href="mailto:jpmikhail@gmail.com">
+                    <FontAwesomeIcon className="top-link-img" icon={['fas', 'envelope']} size="2x" />
                 </a>
             </div>
         </div>

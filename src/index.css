@@ -22,3 +22,35 @@ code {
 }
 
 
+.inline-link {
+  cursor: pointer;
+  color: #7d2e32;
+  text-decoration: none;
+  /* color: #ec444b; */
+}
+
+.inline-link .underline {
+  text-decoration: underline;
+}
+
+.highlighted-link {
+  background-color: #666;
+  text-decoration: none;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.8em;
+  margin-left: 10px;
+  color: white;
+  transition: all 500ms;
+}
+
+.highlighted-link:hover {
+  background-color: #333;
+}
+
+.highlighted-link::after{
+  content: ' →';
+}
