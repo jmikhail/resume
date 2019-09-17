@@ -1,0 +1,56 @@
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.experience-timeline {
+    min-width: 340px;
+    height: calc(100vh - var(--header-height));
+    background-color: #f1f2f1;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-timeline-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.experience-content {
+    flex: 1;
+    padding: 40px;
+    /* height: 50vh; */
+    /* overflow: scroll; */
+}
+
+.experience-link {
+    font-size: 1em;
+    transition: margin 500ms;
+}
+
+.active-experience-link {
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: margin 500ms;
+}
+
+#highlight {
+    color: #ec444b;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 820px) {
+    .experience-timeline{
+        display: none;
+    }
+}

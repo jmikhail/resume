@@ -1,0 +1,9 @@
+.contact-container{
+    background-color: #ee2;
+    min-height: calc(60vh - var(--header-height));
+    font-size: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
