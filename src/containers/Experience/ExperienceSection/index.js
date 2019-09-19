@@ -22,7 +22,7 @@ function ExperienceSection(props) {
       }
       <h2 className="experience-dates">{experience.dateRange}</h2>
       <div className="experience-company-container">
-        <img className="experience-company-logo" src={experience.companyLogo}/>
+        <img className="experience-company-logo" src={experience.companyLogo} alt="company logo"/>
         <div className="experience-company-info">
         <h1 className="experience-company-name">{experience.companyName}</h1>
         <h1 className="experience-company-location">{experience.companyLocation}</h1>

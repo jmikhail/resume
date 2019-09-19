@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 40px;
+    padding: var(--padding-large);
 }
 
 .other-content {
@@ -17,4 +17,12 @@
 
 .highlight {
     color: #ec444b;
+}
+
+
+
+@media only screen and (max-width: 820px) {
+    .other-container{
+        padding: var(--padding-small);
+    }
 }

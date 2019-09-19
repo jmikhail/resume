@@ -1,9 +1,122 @@
 .skills-container{
-    background-color: #fdfdfd;
-    min-height: 100vh;
-    font-size: 12em;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: calc(80vh - var(--header-height));
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding: var(--padding-large);
+    margin-top: 0em;
+}
+
+.skills-categories-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.skills-category-container {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding: calc(var(--padding-large)/2);
+}
+
+.skills-category-title-container {
+    min-width: 260px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.skills-category-title {
+    font-size: 1.5em;
+}
+
+
+.skills-list {
+    flex: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+
+.skill {
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.languages {
+    background-color: rgba(64, 224, 208, 0.534);
+}
+
+.frameworks {
+    background-color: rgba(255, 177, 132, 0.425);
+}
+
+.operating-systems {
+    background-color: rgba(184, 247, 159, 0.425);
+}
+
+.other {
+    background-color: rgba(148, 252, 127, 0.418);
+}
+
+.tools {
+    background-color: rgba(74, 120, 180, 0.418);
+}
+
+.concepts {
+    background-color: rgba(151, 151, 151, 0.418);
+}
+
+@media only screen and (max-width: 1000px) {
+    .skills-container{
+        padding: var(--padding-medium);
+    }
+
+    .skills-category-title-container {
+        min-width: 200px;
+    }
+    
+    .skills-category-title {
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skills-container{
+        padding: var(--padding-small);
+    }
+
+    .skills-category-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-list {
+        /* justify-content: center; */
+        margin-left: 0;
+    }
+
+
+    .skills-category-title-container {
+        justify-content: flex-start;
+    }
 }

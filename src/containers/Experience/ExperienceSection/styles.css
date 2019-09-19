@@ -1,5 +1,5 @@
 .experience-section-container {
-    min-height: calc(60vh - var(--header-height) - 80px);
+    min-height: calc(50vh - var(--header-height));
     height: auto;
     display: flex;
     flex-direction: column;
@@ -80,8 +80,13 @@ li {
 
 @media only screen and (max-width: 820px) {
     .experience-section-container {
-        padding: 20px;
-        margin-left: 4px;
+        min-height: 0;
+        padding: 0px;
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .experience-title {

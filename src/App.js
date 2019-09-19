@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Experience from './containers/Experience';
@@ -7,7 +7,6 @@ import Top from './components/Top';
 import * as Scroll from 'react-scroll';
 import { Events, Link } from 'react-scroll'
 import Other from './containers/Other';
-import Contact from './containers/Contact';
 
 let scrollSpy = Scroll.scrollSpy;
 
@@ -131,6 +130,7 @@ function App() {
       backgroundColor: "#fff",
       details: (
         <ul>
+          <li>Senate Medal for Outstanding Achievement</li>
           <li>High Distinction</li>
           <li>11.17/12 GPA</li>
         </ul>
@@ -139,14 +139,14 @@ function App() {
   ];
 
   return (
-    <div className="App">
+    <div className="app">
       <Top />
       <Header />
       <Skills />
       <Experience name="experience" title="EXPERIENCE" list={workExperience} />
       <Experience name="education" title="EDUCATION" list={education} />
       <Other />
-      <Contact />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 

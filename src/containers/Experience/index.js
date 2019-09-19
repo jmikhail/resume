@@ -13,23 +13,25 @@ function Experience(props) {
   offset = 0 - parseInt(offset, 10);
 
   return (
-    <Element name={props.name} className="experience-container section">
+    <Element name={props.name} className="experience-container section max-width">
+      <div className="experience-timeline">
+        <h1 className="section-title">{props.title}</h1>
+        <div className="experience-timeline-content">
+          {props.list.map((experience) => {
+            return <Link className="experience-link" activeClass="active-experience-link" spy={true} smooth={true} to={experience.name} offset={offset - (0.30 * window.innerHeight)}>{experience.dateRange}</Link>
+          })}
+        </div>
+      </div>
 
       <div className="experience-content">
-        <h1 className="section-title">{props.title}</h1>
+        <h1 className="section-title only-small">{props.title}</h1>
         {props.list.map((experience) => {
           return (
             <ExperienceSection experience={experience} />
           )
         })}
       </div>
-      <div className="experience-timeline">
-      <div className="experience-timeline-content">
-        {props.list.map((experience) => {
-          return <Link className="experience-link" activeClass="active-experience-link" spy={true} smooth={true} to={experience.name} offset={offset - (0.30 * window.innerHeight)}>{experience.dateRange}</Link>
-        })}
-        </div>
-      </div>
+
     </Element>
   )
 }
