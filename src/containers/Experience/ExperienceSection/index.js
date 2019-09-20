@@ -12,9 +12,8 @@ function ExperienceSection(props) {
   let offset = getComputedStyle(document.documentElement).getPropertyValue('--header-height');
   offset = 0 - parseInt(offset, 10);
 
-
   return (
-    <Element name={experience.name} className="experience-section-container" style={{ backgroundColor: experience.backgroundColor }}>
+    <Element name={experience.name} className="experience-section-container">
       <Link className="experience-title" activeClass="active-experience-title" spy={true} smooth={true} to={experience.name} offset={offset - (0.30 * window.innerHeight)}>{experience.title}</Link>
       {experience.subtitle ? 
         <h2 className="experience-subtitle">{experience.subtitle}</h2>

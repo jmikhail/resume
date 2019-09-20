@@ -17,17 +17,17 @@ function Experience(props) {
       <div className="experience-timeline">
         <h1 className="section-title">{props.title}</h1>
         <div className="experience-timeline-content">
-          {props.list.map((experience) => {
-            return <Link className="experience-link" activeClass="active-experience-link" spy={true} smooth={true} to={experience.name} offset={offset - (0.30 * window.innerHeight)}>{experience.dateRange}</Link>
+          {props.list.map((experience, index) => {
+            return <Link key={`timeline-${props.name}-${index}`} className="experience-link" activeClass="active-experience-link" spy={true} smooth={true} to={experience.name} offset={offset - (0.30 * window.innerHeight)}>{experience.dateRange}</Link>
           })}
         </div>
       </div>
 
       <div className="experience-content">
         <h1 className="section-title only-small">{props.title}</h1>
-        {props.list.map((experience) => {
+        {props.list.map((experience, index) => {
           return (
-            <ExperienceSection experience={experience} />
+            <ExperienceSection key={`timeline-${props.name}-${index}`} experience={experience} />
           )
         })}
       </div>

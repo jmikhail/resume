@@ -91,16 +91,16 @@ function Skills(props) {
             <h1 className="section-title">SKILLS</h1>
 
             <div className="skills-categories-list">
-                {skills.map(skillCategory => {
+                {skills.map((skillCategory, index) => {
                     return (
-                        <div className="skills-category-container">
+                        <div key={`skills-${skillCategory.category}`} className="skills-category-container">
                             <div className="skills-category-title-container">
                                 <h1 className="skills-category-title">{skillCategory.category}</h1>
                             </div>
                             <div className="skills-list">
-                                {skillCategory.skills_list.map(skill => {
+                                {skillCategory.skills_list.map((skill, index) => {
                                     return (
-                                        <MyTooltip title={skill.info ? skill.info : ""}>
+                                        <MyTooltip key={`skills-${skillCategory.category}-${index}`} title={skill.info ? skill.info : ""}>
                                             <h1 className={`skill ${skillCategory.class.toLowerCase()}`}>{skill.name}</h1>
                                         </MyTooltip>
                                     )

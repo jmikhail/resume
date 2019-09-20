@@ -64,10 +64,10 @@ function Other(props) {
             <Element name='publications'>
                 <h2 className="section-title">PUBLICATIONS</h2>
 
-                {publications.map((publication) => {
+                {publications.map((publication, index) => {
                     return (
-                        <div className="publication-content">
-                            <h2 className="publication-title">{publication.title} <a class="highlighted-link" href={publication.link}>read</a></h2>
+                        <div key={`publications-${index}`} className="publication-content">
+                            <h2 className="publication-title">{publication.title} <a className="highlighted-link" href={publication.link}>read</a></h2>
                             <p className="publication-other-info">{publication.source}. {publication.location ? `${publication.location}, ` : null}<span className="highlight">{publication.date ? publication.date : null}</span></p>
                             <p className={`publication-author`}>
                                 {publication.authors.map((author, index) => {
@@ -75,7 +75,7 @@ function Other(props) {
                                     if (author === 'Jan Mikhail') {
                                         highlightClass = 'highlight';
                                     }
-                                    return <span className={`${highlightClass}`}>{`${author}${index < publication.authors.length - 1 ? ',  ' : '  '}`}</span>
+                                    return <span key={`publication-author-${index}`} className={`${highlightClass}`}>{`${author}${index < publication.authors.length - 1 ? ',  ' : '  '}`}</span>
                                 })}
                             </p>
 
@@ -86,10 +86,10 @@ function Other(props) {
 
             <Element name='patents'>
                 <h2 className="section-title">PATENTS</h2>
-                {patents.map((patent) => {
+                {patents.map((patent, index) => {
                     return (
-                        <div className="publication-content">
-                            <h2 className="publication-title">{patent.title} <a class="highlighted-link" href={patent.link}>read</a></h2>
+                        <div key={`patents-${index}`} className="publication-content">
+                            <h2 className="publication-title">{patent.title} <a className="highlighted-link" href={patent.link}>read</a></h2>
                             <p className="publication-other-info">{patent.source}. {patent.location ? `${patent.location}, ` : null}<span className="highlight">{patent.date ? patent.date : null}</span></p>
                             <p className={`publication-author`}>
                                 {patent.authors.map((author, index) => {
@@ -97,7 +97,7 @@ function Other(props) {
                                     if (author === 'Jan Mikhail') {
                                         highlightClass = 'highlight';
                                     }
-                                    return <span className={`${highlightClass}`}>{`${author}${index < patent.authors.length - 1 ? ',  ' : '  '}`}</span>
+                                    return <span key={`patent-author-${index}`} className={`${highlightClass}`}>{`${author}${index < patent.authors.length - 1 ? ',  ' : '  '}`}</span>
                                 })}
                             </p>
 

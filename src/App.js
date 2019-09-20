@@ -1,35 +1,44 @@
-import React, { useEffect } from 'react';
-import './App.css';
+import React from 'react';
+
+//libraries
+import Gallery from 'react-grid-gallery';
+import { Link } from 'react-scroll'
+
+//components
 import Header from './components/Header';
 import Experience from './containers/Experience';
 import Skills from './containers/Skills';
 import Top from './components/Top';
-import * as Scroll from 'react-scroll';
-import { Events, Link } from 'react-scroll'
 import Other from './containers/Other';
 
-let scrollSpy = Scroll.scrollSpy;
+
+import './App.css';
+
 
 function App() {
 
-  useEffect(() => {
-    Events.scrollEvent.register('begin', function (to, element) {
-      console.log("begin", arguments);
-    });
+  const buzzynImages = [{
+    src: require("./assets/images/buzzyn_businesshub.jpg"),
+    thumbnail: require("./assets/images/buzzyn_businesshub.jpg"),
+    thumbnailWidth: 300,
+    thumbnailHeight: 184,
+    caption: "Buzzyn BusinessHub, build in ReactJS, is a web application for business owners to design, deploy and track loyalty programs. Check it out @ buzzyn.com/business-hub/login"
+  },
+  {
+    src: require("./assets/images/buzzyn_pos.jpg"),
+    thumbnail: require("./assets/images/buzzyn_pos.jpg"),
+    thumbnailWidth: 300,
+    thumbnailHeight: 188,
+    caption: "Buzzyn Point of Sale, build with React Native, is a tablet/smartphone app that facilitates scanning at participating stores to issue rewards for customers. Available on iOS App Store and Android Play Store"
+  },
+  {
+    src: require("./assets/images/buzzyn_rewards.jpg"),
+    thumbnail: require("./assets/images/buzzyn_rewards.jpg"),
+    thumbnailWidth: 300,
+    thumbnailHeight: 200,
+    caption: "Buzzyn Rewards, build with React Native, is an app to collect points, redeem rewards and discover deals. Available on iOS App Store and Android Play Store"
+  }];
 
-    Events.scrollEvent.register('end', function (to, element) {
-      console.log("end", arguments);
-    });
-
-    scrollSpy.update();
-
-    console.log(scrollSpy);
-
-    return () => {
-      Events.scrollEvent.remove('begin');
-      Events.scrollEvent.remove('end');
-    }
-  }, [])
 
   let workExperience = [
     {
@@ -39,7 +48,6 @@ function App() {
       companyName: "Buzzyn Rewards",
       companyLocation: "Ottawa, Canada",
       dateRange: "September 2013 - Present",
-      backgroundColor: "#fff",
       details: (
         <ul>
           <li>Overseeing all the technical operations at Buzzyn Rewards, a rewards platform used by over 15,000 users in Ottawa</li>
@@ -48,6 +56,9 @@ function App() {
           <li>Developed and released two <span id="highlight">React Native</span> applications</li>
           <li>Led the development of a RESTful API service (<span id="highlight">Ruby on Rails</span>) powering the platform</li>
           <li>Supervised and mentored a number of junior developers and computer science students with the development work on the platform</li>
+          <div className="buzzyn-gallery-wrapper">
+            <Gallery id="buzzyn-gallery" images={buzzynImages} enableImageSelection={false} backdropClosesModal/>,
+          </div>
         </ul>
       )
     },
@@ -58,7 +69,6 @@ function App() {
       companyName: "BlackBerry (formerly Research In Motion)",
       companyLocation: "Ottawa, Canada",
       dateRange: "May 2012 - August 2012",
-      backgroundColor: "#fff",
       details: (
         <ul>
           <li>Improved the scalability of the existing implementation of the AppWorld Recommendation engine which is built on the Apache Hadoop framework</li>
@@ -73,7 +83,6 @@ function App() {
       companyName: "BlackBerry (formerly Research In Motion)",
       companyLocation: "Ottawa, Canada",
       dateRange: "January 2010 - December 2011",
-      backgroundColor: "#fff",
       details: (
         <ul>
           <li>Worked on feature development and maintenance of the AppWorld Client on all BlackBerry handheld devices</li>
@@ -89,7 +98,6 @@ function App() {
       companyName: "Alcatel-Lucent",
       companyLocation: "Ottawa, Canada",
       dateRange: "May 2010 - August 2010",
-      backgroundColor: "#fff",
       details: (
         <ul>
           <li>Developed an Apache Maven plug-in to add functionality to the Archetype Plug-in (used to generate new projects from templates)</li>
@@ -107,16 +115,17 @@ function App() {
       companyName: "Carleton University",
       companyLocation: "Ottawa, Canada",
       dateRange: "September 2013 - September 2016",
-      backgroundColor: "#fff",
       details: (
-        <ul>
-          <li>Supervisor: <a className="inline-link" href="https://carleton.ca/sce/people/wainer/">Dr. Gabriel Wainer</a></li>
-          <li>Thesis: Discrete Event Simulation of Long Term Evolution-Advanced (LTE-A) Networks<a class="highlighted-link" href="https://curve.carleton.ca/system/files/etd/96b20de4-f516-4bbe-87a3-80d0b9c9187f/etd_pdf/2ac3b371d3ce8cbb7f399330a77c83ea/mikhail-discreteeventsimulationoflongtermevolution.pdf">read</a></li>
-          <li>Proposed two algorithms to enhance the upload speed/performance of large files at the cell edges in LTE-A networks</li>
-          <li>Modelled Coordinated MultiPoint (CoMP) techniques used in LTE-advanced (4G) cellular networks. The simulations were based on the Discrete EVent System specification (DEVS) formalism and developed with the CD++ simulation toolkit in <span className="highlight">C++</span></li>
-          <li>Collaborated with Ericsson Canada on building a simplified simulation model of LTE’s EUTRAN protocol stack to test the efficiency of the proposed algorithms</li>
-          <li>Awarded two patents for the proposed algorithms<Link className="highlighted-link" smooth={true} to='patents'>more</Link></li>
-        </ul>
+        <div>
+          <ul>
+            <li>Supervisor: <a className="inline-link" href="https://carleton.ca/sce/people/wainer/">Dr. Gabriel Wainer</a></li>
+            <li>Thesis: Discrete Event Simulation of Long Term Evolution-Advanced (LTE-A) Networks<a className="highlighted-link" href="https://curve.carleton.ca/system/files/etd/96b20de4-f516-4bbe-87a3-80d0b9c9187f/etd_pdf/2ac3b371d3ce8cbb7f399330a77c83ea/mikhail-discreteeventsimulationoflongtermevolution.pdf">read</a></li>
+            <li>Proposed two algorithms to enhance the upload speed/performance of large files at the cell edges in LTE-A networks</li>
+            <li>Modelled Coordinated MultiPoint (CoMP) techniques used in LTE-advanced (4G) cellular networks. The simulations were based on the Discrete EVent System specification (DEVS) formalism and developed with the CD++ simulation toolkit in <span className="highlight">C++</span></li>
+            <li>Collaborated with Ericsson Canada on building a simplified simulation model of LTE’s EUTRAN protocol stack to test the efficiency of the proposed algorithms</li>
+            <li>Awarded two patents for the proposed algorithms<Link className="highlighted-link" smooth={true} to='patents'>more</Link></li>
+          </ul>
+        </div>
       )
     },
     {
@@ -127,7 +136,6 @@ function App() {
       companyName: "Carleton University",
       companyLocation: "Ottawa, Canada",
       dateRange: "September 2008 - June 2013",
-      backgroundColor: "#fff",
       details: (
         <ul>
           <li>Senate Medal for Outstanding Achievement</li>
