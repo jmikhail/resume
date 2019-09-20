@@ -46,14 +46,14 @@
 }
 
 .active-experience-link {
-    color: red;
+    color: var(--brand-color);
     margin-top: 30px;
     margin-bottom: 30px;
     transition: margin 500ms;
 }
 
 #highlight {
-    color: #ec444b;
+    color: var(--brand-color);
     font-weight: bold;
 }
 

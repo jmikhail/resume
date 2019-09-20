@@ -23,7 +23,7 @@ function Header(props) {
                         setSideVisibility('hidden');
                     }
                 }}>
-                    <img className="small-header-toggle" src={require("../../assets/images/icon_menu_toggle.png")} />
+                    <img className="small-header-toggle" src={require("../../assets/images/icon_menu_toggle.png")} alt="side drawer toggle"/>
                 </div>
                 {/* <h2 className="small-header-title">Jan Mikhail</h2> */}
                 <div className="header-links">

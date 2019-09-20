@@ -18,7 +18,7 @@
 
 
 .active-experience-title {
-    color: #ec444b;
+    color: var(--brand-color);
 }
 
 

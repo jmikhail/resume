@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    align-self: stretch;
     height: var(--header-height);
     background-color: rgb(238, 238, 238);
     position: -webkit-sticky; /* Safari */
@@ -43,7 +43,7 @@
 
 .small-header-toggle-container{
     display: none;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 4px;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .active-header-link {
-    color: #ec444b;
+    color: var(--brand-color);
 }
 
 @media only screen and (max-width: 800px) {

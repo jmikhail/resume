@@ -16,7 +16,7 @@
 }
 
 .publication-content{
-    margin: 30px 0 30px 0;
+    margin: 60px 0;
 }
 
 .publication-title{
@@ -37,7 +37,7 @@
 
 .highlight {
     font-weight: bold;
-    color: #ec444b;
+    color: var(--brand-color);
 }
 
 

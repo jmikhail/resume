@@ -2,6 +2,7 @@
 
 :root {
   --brand-color: #ec444b;
+  /* --brand-color: #000080; */
   --brand-color-hover: #f45359;
   --header-height: 70px;
   --padding-large: 40px;
@@ -28,7 +29,6 @@ code {
   cursor: pointer;
   color: #7d2e32;
   text-decoration: none;
-  /* color: #ec444b; */
 }
 
 .inline-link .underline {

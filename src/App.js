@@ -122,7 +122,7 @@ function App() {
     {
       name: "edu-2",
       title: "Bachelor of Engineering",
-      subtitle: "Software Engineering",
+      subtitle: "Software Engineering, High Distinction",
       companyLogo: require("./assets/images/logo_carleton.jpg"),
       companyName: "Carleton University",
       companyLocation: "Ottawa, Canada",
@@ -131,7 +131,6 @@ function App() {
       details: (
         <ul>
           <li>Senate Medal for Outstanding Achievement</li>
-          <li>High Distinction</li>
           <li>11.17/12 GPA</li>
         </ul>
       )
