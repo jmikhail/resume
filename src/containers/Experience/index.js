@@ -1,14 +1,14 @@
 import React from 'react';
 
-import ExperienceSection from './ExperienceSection';
+//libraries
 import { Element, Link } from 'react-scroll';
+
+//components
+import ExperienceSection from './ExperienceSection';
 
 import "./styles.css"
 
 function Experience(props) {
-
-
-
   let offset = getComputedStyle(document.documentElement).getPropertyValue('--header-height');
   offset = 0 - parseInt(offset, 10);
 
@@ -31,7 +31,6 @@ function Experience(props) {
           )
         })}
       </div>
-
     </Element>
   )
 }

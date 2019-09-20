@@ -1,13 +1,15 @@
 import React from 'react';
+
+//libraries
 import { Link } from 'react-scroll';
+
+//images
+import CloseButton from '../../assets/images/icon_close.png';
 
 import "./styles.css"
 
-import CloseButton from '../../assets/images/icon_close.png';
-
 
 function Header(props) {
-
     let [sideVisibility, setSideVisibility] = React.useState("hidden");
 
     let offset = getComputedStyle(document.documentElement).getPropertyValue('--header-height');
@@ -25,7 +27,6 @@ function Header(props) {
                 }}>
                     <img className="small-header-toggle" src={require("../../assets/images/icon_menu_toggle.png")} alt="side drawer toggle"/>
                 </div>
-                {/* <h2 className="small-header-title">Jan Mikhail</h2> */}
                 <div className="header-links">
                     <Link
                         className="header-link"
@@ -115,7 +116,6 @@ function Header(props) {
                     </Link>
                 </div>
             </div>
-
         </div>
     )
 }

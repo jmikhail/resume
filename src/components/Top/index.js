@@ -1,8 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-
-import "./styles.css";
-
+//libraries
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,8 +11,8 @@ import {
     faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 
-// import * as THREE from './three.js'
-// import BIRDS from './vanta/effects/vanta.birds.js'
+import "./styles.css";
+
 
 library.add(
     faGithub,

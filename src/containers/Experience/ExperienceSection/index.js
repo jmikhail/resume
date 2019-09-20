@@ -1,11 +1,12 @@
 import React from 'react';
+
+//libraries
 import { Element, Link } from 'react-scroll';
 
 import "./styles.css"
 
 
 function ExperienceSection(props) {
-
   const { experience } = props;
 
   let offset = getComputedStyle(document.documentElement).getPropertyValue('--header-height');

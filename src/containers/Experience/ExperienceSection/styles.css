@@ -7,21 +7,15 @@
     align-items: flex-start;
 }
 
-
-
 .experience-title {
     font-size: 2em;
     color: #333;
     margin-bottom: 0px;
 }
 
-
-
 .active-experience-title {
     color: var(--brand-color);
 }
-
-
 
 .experience-subtitle {
     font-size: 1em;
@@ -29,7 +23,6 @@
     margin-top: 0px;
     margin-bottom: 6px;
 }
-
 
 .experience-dates {
     display: none;
@@ -44,7 +37,6 @@
     align-items: center;
     width: 100%;
 }
-
 
 .experience-company-logo {
     width: 60px;
@@ -61,8 +53,6 @@
     margin-top: 2px;
     margin-bottom: 8px;
 }
-
-
 
 .experience-company-location {
     font-size: 0.9em;

@@ -18,7 +18,6 @@
 }
 
 .skills-category-container {
-    /* width: 100%; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,7 +38,6 @@
     font-size: 1.5em;
 }
 
-
 .skills-list {
     flex: 4;
     display: flex;
@@ -49,7 +47,6 @@
     flex-wrap: wrap;
     margin-left: 40px;
 }
-
 
 .skill {
     font-size: 0.9em;
@@ -111,10 +108,8 @@
     }
 
     .skills-list {
-        /* justify-content: center; */
         margin-left: 0;
     }
-
 
     .skills-category-title-container {
         justify-content: flex-start;

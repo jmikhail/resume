@@ -1,10 +1,11 @@
 import React from 'react';
+
+//libraries
 import { Element } from 'react-scroll';
 import Tooltip from '@material-ui/core/Tooltip';
 import { withStyles } from '@material-ui/core/styles';
 
 import "./styles.css"
-
 
 const MyTooltip = withStyles(theme => ({
     tooltip: {
@@ -17,8 +18,6 @@ const MyTooltip = withStyles(theme => ({
   }))(Tooltip);
 
 function Skills(props) {
-
-
     let skills = [
         {
             category: "Languages",
@@ -111,7 +110,6 @@ function Skills(props) {
                     )
                 })}
             </div>
-
         </Element>
     )
 }

@@ -61,7 +61,6 @@ function Other(props) {
 
     return (
         <Element name='other' className="other-container max-width">
-
             <Element name='publications'>
                 <h2 className="section-title">PUBLICATIONS</h2>
 
@@ -87,8 +86,6 @@ function Other(props) {
 
             <Element name='patents'>
                 <h2 className="section-title">PATENTS</h2>
-
-
                 {patents.map((patent) => {
                     return (
                         <div className="publication-content">
@@ -107,7 +104,6 @@ function Other(props) {
                         </div>
                     );
                 })}
-
             </Element>
         </Element>
     )

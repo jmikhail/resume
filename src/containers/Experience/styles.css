@@ -12,8 +12,7 @@
 .experience-timeline {
     min-width: 320px;
     height: calc(100vh - var(--header-height));
-    /* background-color: #f1f2f1; */
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: var(--header-height);
     display: flex;
@@ -36,8 +35,6 @@
     flex: 1;
     padding: var(--padding-large);
     min-height: 100vh;
-    /* height: 50vh; */
-    /* overflow: scroll; */
 }
 
 .experience-link {

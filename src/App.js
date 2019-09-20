@@ -145,7 +145,7 @@ function App() {
       <Experience name="experience" title="EXPERIENCE" list={workExperience} />
       <Experience name="education" title="EDUCATION" list={education} />
       <Other />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
   );
 
