@@ -1,0 +1,26 @@
+
+.publication-content{
+    margin: 60px 0;
+}
+
+.publication-title{
+    font-size: 1.2em;
+    margin: 0 0 10px 0;
+}
+
+.publication-author{
+    display: inline-block;
+    margin: 0 0 12px 0;
+    color: #444;
+}
+
+.publication-other-info {
+    margin: 0 0 12px 0;
+    font-size: 1.1em;
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--brand-color);
+}
+
