@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.d06d7907.chunk.css",
+    "main.js": "/resume/static/js/main.b98024d4.chunk.js",
+    "main.js.map": "/resume/static/js/main.b98024d4.chunk.js.map",
+    "runtime~main.js": "/resume/static/js/runtime~main.deee99b2.js",
+    "runtime~main.js.map": "/resume/static/js/runtime~main.deee99b2.js.map",
+    "static/js/2.49e698ae.chunk.js": "/resume/static/js/2.49e698ae.chunk.js",
+    "static/js/2.49e698ae.chunk.js.map": "/resume/static/js/2.49e698ae.chunk.js.map",
+    "index.html": "/resume/index.html",
+    "precache-manifest.a0ffa9a88c9d4d4455e3ab870a244c9c.js": "/resume/precache-manifest.a0ffa9a88c9d4d4455e3ab870a244c9c.js",
+    "service-worker.js": "/resume/service-worker.js",
+    "static/css/main.d06d7907.chunk.css.map": "/resume/static/css/main.d06d7907.chunk.css.map",
+    "static/media/buzzyn_businesshub.jpg": "/resume/static/media/buzzyn_businesshub.7ef42a2e.jpg",
+    "static/media/buzzyn_pos.jpg": "/resume/static/media/buzzyn_pos.b463347a.jpg",
+    "static/media/buzzyn_rewards.jpg": "/resume/static/media/buzzyn_rewards.94a98c14.jpg",
+    "static/media/logo_alcatellucent.jpg": "/resume/static/media/logo_alcatellucent.8ff9e5e0.jpg",
+    "static/media/logo_blackberry.jpg": "/resume/static/media/logo_blackberry.27736129.jpg",
+    "static/media/logo_buzzyn.jpg": "/resume/static/media/logo_buzzyn.19471a4c.jpg",
+    "static/media/logo_carleton.jpg": "/resume/static/media/logo_carleton.b5a8c3f9.jpg",
+    "static/media/me.jpg": "/resume/static/media/me.dc53e6a6.jpg"
+  }
+}
