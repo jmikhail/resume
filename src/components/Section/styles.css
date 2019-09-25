@@ -1,0 +1,22 @@
+
+.section-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.section-wrapper {
+    max-width: 1800px;
+}
+
+.with-padding {
+    padding: var(--padding-large);
+}
+
+@media only screen and (max-width: 1000px) {
+    .with-padding {
+        padding: var(--padding-small);
+    }
+} 

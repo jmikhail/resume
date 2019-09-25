@@ -1,9 +1,9 @@
 import React from 'react';
-import { Element } from 'react-scroll';
 
 import "./styles.css"
-import Publications from '../../components/Publication';
-import Patents from '../MyPatents';
+import Section from '../../components/Section';
+import Publication from '../../components/Publication';
+import Patent from '../../components/Patent';
 
 function Other(props) {
 
@@ -62,11 +62,27 @@ function Other(props) {
 
 
     return (
-        <Element name='other' className="other-container max-width">
-            <Publications publications={publications}/>
-            <Patents patents={patents}/>
-        </Element>
+        <Section name='other' hideTitle noPadding>
+            <Section title="PUBLICATIONS">
+                {publications.map((publication, index) => {
+                    return (
+                        <Publication key={`publication-${index}`} publication={publication} />
+                    )
+                })}
+
+            </Section>
+            <Section title="PATENTS">
+
+                {patents.map((patent, index) => {
+                    return (
+                        <Patent key={`patents-${index}`} patent={patent} />
+                    )
+                })}
+
+            </Section>
+        </Section>
     )
 }
+
 
 export default Other;

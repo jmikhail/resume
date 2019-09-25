@@ -16,7 +16,7 @@
 .section-title {
   font-size: 3em;
   color: #333;
-  margin-top: 1em;
+  margin-top: 0em;
   margin-bottom: 1em;
 }
 
@@ -26,6 +26,13 @@
 
 .max-width {
   max-width: 1800px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .section-title {
+    font-size: 2.6em;
+  }
 }
 
 
