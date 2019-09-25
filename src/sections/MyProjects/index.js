@@ -65,6 +65,16 @@ function MyProjects(props) {
         }
     ];
 
+    const vitalityImages = [
+        {
+            src: require("../../assets/images/vitality.jpg"),
+            thumbnail: require("../../assets/images/vitality_thumb.jpg"),
+            thumbnailWidth: 300,
+            thumbnailHeight: 195,
+            caption: "vitality.ca"
+        }
+    ];
+
 
     let projects = [
         {
@@ -142,6 +152,21 @@ function MyProjects(props) {
                         <TechUsed title="Redis" />
                         <TechUsed title="Pundit" noImage />
                         <TechUsed title="Carrier Wave" noImage />
+                    </div>
+                </div>
+            )
+        },
+        {
+            name: "proj-5",
+            title: "Vitality Physiotherapy Clinic Website",
+            details: (
+                <div>
+                    <p>vitalitypt.ca</p>
+                    <div className="technologies-used">
+                        <TechUsed title="React" />
+                    </div>
+                    <div className="buzzyn-gallery-wrapper">
+                        <Gallery id="buzzyn-gallery" rowHeight={150} images={vitalityImages} enableImageSelection={false} backdropClosesModal />
                     </div>
                 </div>
             )
